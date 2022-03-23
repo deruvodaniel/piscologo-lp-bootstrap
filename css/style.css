@@ -23,6 +23,7 @@ body {
 
 main {
 	margin-top: 8.5rem;
+	min-height: fit-content;
 }
 
 
@@ -68,6 +69,9 @@ h5 {
 	max-width: 50px;
 }
 
+.carousel {
+	padding: 0;
+}
 /** hero **/
 #hero {
 	background-image: url(/img/hero.jpg);
@@ -104,6 +108,9 @@ h5 {
 	min-height: 450px;
 }
 
+#covid {
+	min-height: 100vh;
+}
 
 #shop figure img{
 	border-top-left-radius: 5px;
