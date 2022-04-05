@@ -5,6 +5,7 @@ footer {
 	padding: 2rem;
 
 	h5 {
+		font-size: $textSm;
 		margin: 0;
 	}
 	
@@ -29,13 +30,13 @@ footer {
 		}
 		
 		.icon {
-			max-width: 5rem;
+			max-width: 4rem;
 		}
 	}
 }
 
 // Mobile
-@media only screen and (max-width: 480px) {
+@include mobileScreen {
 	footer {
 		flex-direction: column;
 		align-items: flex-start;

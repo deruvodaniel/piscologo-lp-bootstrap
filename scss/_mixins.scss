@@ -1,0 +1,14 @@
+$mobile-width: 480px;
+$medium-width: 768px;
+
+@mixin mobileScreen {
+  @media screen and (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin mediumScreen {
+  @media screen and (min-width: $medium-width) {
+    @content;
+  }
+}

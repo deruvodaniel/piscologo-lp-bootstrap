@@ -6,5 +6,24 @@ $mainColor:rgb(255, 191, 52);
 $secondaryColor:rgb(36, 36, 36);
 $fontColor: #fff;
 
+// Palette
+
+$palette: (
+	'color1': #fb8c00,
+	'color2': rgb(255, 191, 52),
+	'color3': #ffaf7a,
+	'color4': #fe5f5f,
+	'color5': #7e8a9e,
+	'color6': #484d58,
+	'color7': #5e6178,
+);
+
+.bg-darker {
+	background-color: map-get($map: $palette, $key: 'color6');
+}
+
+.bg-dark-lite {
+	background-color: map-get($map: $palette, $key: 'color7');
+}
 
 
