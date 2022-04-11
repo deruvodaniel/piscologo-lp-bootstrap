@@ -168,14 +168,27 @@ body {
 	}
 }
 
+// Especialidades
+
+#especialidades {
+	.carousel {
+		margin-bottom: 5rem!important;
+		border: 1px solid red;
+	}
+}
+
+// Covid 
+
+#covid {
+	height: 100vh;
+}
+
 // Sobre Mi
 
 #sobre-mi {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
-	background-color: red;
 	p {
 		color: $fontColor;
 	}
@@ -234,7 +247,7 @@ body {
 
 		.carousel{
 			min-width: 100%;
-			margin-top: 0 !important;
+			margin: 0 !important;
 		}
 
 		#tcc {

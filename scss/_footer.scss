@@ -1,8 +1,12 @@
 // Footer 
 
 footer {
+	position: relative;
+	background-color: $secondaryColor;
+	bottom: 0;
 	max-height: 150px;
 	padding: 2rem;
+	z-index: 6;
 
 	h5 {
 		font-size: $textSm;

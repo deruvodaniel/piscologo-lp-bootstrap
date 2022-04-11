@@ -120,12 +120,17 @@ body {
     text-align: center;
     margin: 0; }
 
+#especialidades .carousel {
+  margin-bottom: 5rem !important;
+  border: 1px solid red; }
+
+#covid {
+  height: 100vh; }
+
 #sobre-mi {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: red; }
+  justify-content: center; }
   #sobre-mi p {
     color: #fff; }
   #sobre-mi span {
@@ -160,7 +165,7 @@ body {
     font-size: 1rem; }
   body .carousel {
     min-width: 100%;
-    margin-top: 0 !important; }
+    margin: 0 !important; }
   body #tcc h1 {
     font-size: 1.5rem; }
   body #tcc h5 {
@@ -175,8 +180,12 @@ body {
     max-width: 40%; } }
 
 footer {
+  position: relative;
+  background-color: #242424;
+  bottom: 0;
   max-height: 150px;
-  padding: 2rem; }
+  padding: 2rem;
+  z-index: 6; }
   footer h5 {
     font-size: 1rem;
     margin: 0; }
