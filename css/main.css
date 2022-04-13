@@ -109,8 +109,6 @@ body {
     background-position: top center;
     background-size: cover;
     background-attachment: fixed; }
-  body #intereses {
-    min-height: 570px; }
   body #shop a {
     text-decoration: none; }
     body #shop a figure img {
