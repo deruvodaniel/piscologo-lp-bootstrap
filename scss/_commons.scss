@@ -2,28 +2,66 @@
 
 // Colours
 
-$mainColor:rgb(255, 191, 52);
-$secondaryColor:rgb(36, 36, 36);
-$fontColor: #fff;
+$mainColor: #fff;
+$secondaryColor: #022F40;
+$hightlightColor:#0090C1;
+$fontColor: #C33C54;
 
 // Palette
 
 $palette: (
-	'color1': #fb8c00,
-	'color2': rgb(255, 191, 52),
-	'color3': #ffaf7a,
-	'color4': #fe5f5f,
-	'color5': #7e8a9e,
-	'color6': #333333,
-	'color7': #5e6178,
+	'color1': #d5ecfc,
+	'color2': #38AECC,
+	'color3': #0090C1,
+	'color4': #254E70,
+	'color5': #022F40,
 );
 
-.bg-darker {
-	background-color: map-get($map: $palette, $key: 'color6');
+.bg-deep-blue {
+	background-color: map-get($map: $palette, $key: 'color5');
 }
 
-.bg-dark-lite {
-	background-color: map-get($map: $palette, $key: 'color7');
+.bg-lite {
+	background-color: map-get($map: $palette, $key: 'color1');
+	
+}
+
+.bg-gradient-deep {
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.425), rgba(252, 252, 252, 0));
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: rgba(255, 255, 255, 1);
+
+	&:hover {
+		border: 1px solid rgb(184, 184, 184);
+		border-radius: 10px;
+		// background: rgb(214, 214, 214);
+	}
+}
+// ::-webkit-scrollbar-track-piece {
+// 	// background-color: red;
+// }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(51, 51, 51, 0.2);
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #254E70;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: $fontColor;
 }
 
 

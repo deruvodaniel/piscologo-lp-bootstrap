@@ -3,11 +3,38 @@
   padding: 0;
   margin: 0; }
 
-.bg-darker {
-  background-color: #333333; }
+.bg-deep-blue {
+  background-color: #022F40; }
 
-.bg-dark-lite {
-  background-color: #5e6178; }
+.bg-lite {
+  background-color: #d5ecfc; }
+
+.bg-gradient-deep {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.425), rgba(252, 252, 252, 0)); }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white; }
+  ::-webkit-scrollbar-track:hover {
+    border: 1px solid #b8b8b8;
+    border-radius: 10px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(51, 51, 51, 0.2);
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #254E70; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #C33C54; }
 
 html {
   font-size: 62.5%;
@@ -15,7 +42,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-image: url(/img/404-min.svg);
+  background-image: url(../img/404-min.svg);
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
@@ -44,24 +71,33 @@ body {
   body h1 {
     font-size: 5rem;
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #0090C1;
+    font-weight: 600; }
   body h2 {
     font-size: 5rem;
-    color: #fff; }
+    color: #fff;
+    font-weight: 600; }
   body h3 {
     font-size: 3.5rem;
-    color: #ffbf34;
-    margin: 0; }
+    color: #C33C54;
+    margin: 0;
+    font-weight: 600; }
   body h4 {
     font-size: 2.6rem;
-    color: #fff; }
+    color: #C33C54;
+    font-weight: 600; }
   body h5 {
     font-size: 2rem;
-    color: #fff; }
+    color: #022F40;
+    font-weight: 600; }
+  body p {
+    font-size: 2rem;
+    font-weight: 500; }
   body .button, body .btn-rounded {
-    background-color: transparent;
-    border: 1px solid #ffbf34;
-    color: #ffbf34;
+    background-color: #022F40;
+    border: 2px solid #0090C1;
+    color: #fff;
     font-weight: 700;
     text-decoration: none;
     font-size: 1.8rem;
@@ -71,9 +107,9 @@ body {
     transition: all ease-in-out .3s; }
     body .button:hover, body .btn-rounded:hover {
       cursor: pointer;
-      color: #242424;
-      background-color: #ffbf34;
-      border: 1px solid #ffbf34;
+      color: #fff;
+      background-color: #C33C54;
+      border: 2px solid #C33C54;
       transform: scale(1.1); }
   body .btn-rounded {
     border-radius: 0.25rem; }
@@ -90,12 +126,12 @@ body {
       font-size: 2.5rem;
       font-weight: 600;
       text-align: center;
-      color: #fff; }
+      color: #022F40; }
     body #hero h1 {
       font-size: 8rem;
       font-weight: 600;
       text-align: center;
-      color: #ffbf34;
+      color: #fff;
       text-transform: uppercase; }
   body #tcc {
     margin-top: 10rem;
@@ -105,45 +141,53 @@ body {
     flex-direction: column;
     justify-content: space-around;
     background-color: transparent;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/hero-min.jpg);
+    background-image: linear-gradient(rgba(172, 172, 172, 0.5), rgba(141, 141, 141, 0.5)), url(../img/hero-min.jpg);
     background-position: top center;
     background-size: cover;
     background-attachment: fixed; }
-  body #shop a {
-    text-decoration: none; }
-    body #shop a figure img {
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-      min-width: auto;
-      height: 220px;
-      border-radius: 5px;
-      transition: all ease-in-out .2s; }
-      body #shop a figure img:hover {
+  body #iframe {
+    max-width: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  body #shop {
+    padding: 0 6rem; }
+    body #shop a {
+      text-decoration: none; }
+      body #shop a figure img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        min-width: auto;
+        height: 220px;
+        border-radius: 5px;
+        transition: all ease-in-out .2s; }
+        body #shop a figure img:hover {
+          cursor: pointer;
+          transform: scale(1.1); }
+      body #shop a figure figcaption {
+        font-size: 1.5rem;
+        color: #fff;
+        padding: 0;
+        text-align: center;
+        margin-top: 1rem;
+        transition: all ease-in-out .2s; }
+      body #shop a p.price {
+        color: #fff;
+        padding-bottom: 10px;
+        text-align: center;
+        font-weight: 700;
+        margin: 0;
+        transition: all ease-in-out .2s; }
+      body #shop a:hover p, body #shop a:hover figcaption {
         cursor: pointer;
-        transform: scale(1.1); }
-    body #shop a figure figcaption {
-      font-size: 1.3rem;
-      color: #fff;
-      padding: 0;
-      text-align: center;
-      margin-top: 1rem;
-      transition: all ease-in-out .2s; }
-    body #shop a p.price {
-      color: #fff;
-      padding-bottom: 10px;
-      text-align: center;
-      margin: 0;
-      transition: all ease-in-out .2s; }
-    body #shop a:hover p, body #shop a:hover figcaption {
-      cursor: pointer;
-      color: #ffbf34;
-      font-weight: 900; }
+        color: #C33C54;
+        font-weight: 900; }
 
 #especialidades {
   margin-top: 10rem; }
-  #especialidades .carousel {
-    margin-bottom: 5rem !important;
-    border: 1px solid red; }
+
+.carousel {
+  width: 90%; }
 
 #covid {
   margin-top: 10rem;
@@ -156,16 +200,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  #sobre-mi p {
-    color: #fff; }
   #sobre-mi span {
     text-transform: uppercase;
-    color: #ffbf34; }
+    font-size: 3.5rem;
+    color: #0090C1; }
   #sobre-mi a {
     text-decoration: none;
-    color: #ffbf34; }
+    color: #C33C54;
+    font-weight: 600; }
     #sobre-mi a:hover {
-      text-decoration: underline; }
+      text-decoration: underline;
+      color: #fff; }
 
 #error-page {
   height: 100vh; }
@@ -175,9 +220,11 @@ body {
     width: 70%; }
     #error-page .msg .text-wrapper h2 {
       font-size: 5rem;
-      text-align: center; }
+      text-align: center;
+      color: #C33C54; }
     #error-page .msg .text-wrapper p {
-      text-align: center; }
+      text-align: center;
+      font-weight: 700; }
 
 @media screen and (max-width: 768px) {
   body #hero h1 {
@@ -189,16 +236,19 @@ body {
   body #tcc h1 {
     font-size: 3.5rem; }
   body #tcc h5 {
-    font-size: 1.3rem; }
+    font-size: 1.5rem; }
   body #tcc h4 {
     font-size: 2.5rem; }
   body #covid img, body #sobre-mi img {
-    max-width: 80%; } }
+    width: 90%; } }
 
 @media screen and (max-width: 576px) {
+  html,
+  body {
+    overflow-y: auto; }
   body .button, body .btn-rounded {
     min-width: 100% !important;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 5px 15px; }
   body #hero h1 {
     font-size: 3.5rem; }
@@ -212,7 +262,7 @@ body {
     font-size: 2.5rem;
     text-align: center; }
   body #especialidades p, body #especialidades span, body #sobre-mi p, body #sobre-mi span, body #covid p, body #covid span {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center; }
   body .carousel {
     min-width: 100%;
@@ -222,27 +272,28 @@ body {
   body #tcc h1 {
     font-size: 2.5rem; }
   body #tcc h5 {
-    font-size: 1.3rem; }
+    font-size: 2rem; }
   body #tcc h4 {
     font-size: 1.5rem; }
   body #contacto article h2 {
-    font-size: 3.5rem; }
+    font-size: 3.5rem;
+    font-weight: 700; }
   body #contacto article p {
-    font-size: 1.3rem; } }
+    font-size: 1.5rem;
+    font-weight: 700; } }
 
 footer {
   position: relative;
-  background-color: #242424;
   bottom: 0;
   max-height: 150px;
   padding: 2rem;
   z-index: 6; }
   footer h5 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin: 0;
     text-align: center; }
   footer span {
-    color: #ffbf34; }
+    color: #0090C1; }
   footer .redes {
     height: fit-content;
     display: flex;
@@ -264,7 +315,7 @@ footer {
     flex-direction: column;
     align-items: flex-start; }
     footer h5 {
-      font-size: 1.3rem; }
+      font-size: 1.5rem; }
     footer nav {
       flex-direction: column; }
       footer nav .redes .icon {

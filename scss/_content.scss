@@ -7,7 +7,7 @@ html {
 }
 
 body {
-	background-image: url(/img/404-min.svg);
+	background-image: url(../img/404-min.svg);
 	background-position: top center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -44,34 +44,45 @@ body {
 		font-size: 5rem;
 		text-align: center;
 		text-transform: uppercase;
+		color: $hightlightColor;
+		font-weight: 600;
 	}
 	
 	h2 {
 		font-size: $textXl;
-		color: $fontColor;
+		color: $mainColor;
+		font-weight: 600;
 	}
 	
 	h3 {
 		font-size: $textLg;
-		color: $mainColor;
+		color: $fontColor;
 		margin: 0;
+		font-weight: 600;
 	}
 	
 	h4 {
 		font-size: 2.6rem;
 		color: $fontColor;
+		font-weight: 600;
 	}
 	
 	h5 {
 		font-size: 2rem;
-		color: $fontColor;
+		color: $secondaryColor;
+		font-weight: 600;
+	}
+
+	p {
+		font-size: 2rem;
+		font-weight: 500;
 	}
 
 	// Buttons
 
 	.button {
-		background-color: transparent;
-		border: 1px solid $mainColor;
+		background-color: $secondaryColor;
+		border: 2px solid $hightlightColor;
 		color: $mainColor;	
 		font-weight: 700;
 		text-decoration: none;
@@ -82,9 +93,9 @@ body {
 		transition: all ease-in-out .3s;
 		&:hover {
 			cursor: pointer;
-			color: $secondaryColor;
-			background-color: $mainColor;
-			border: 1px solid $mainColor;
+			color: $mainColor;
+			background-color: $fontColor;
+			border: 2px solid $fontColor;
 			transform: scale(1.1);
 		}
 	}
@@ -118,7 +129,7 @@ body {
 			font-size: $textMd;
 			font-weight: 600;
 			text-align: center;
-			color: $fontColor;
+			color: $secondaryColor;
 		}
 	
 		h1{
@@ -140,16 +151,24 @@ body {
 		flex-direction: column;
 		justify-content: space-around;
 		background-color: transparent;
-		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/hero-min.jpg);
+		background-image: linear-gradient(rgba(172, 172, 172, 0.5), rgba(141, 141, 141, 0.5)), url(../img/hero-min.jpg);
 		// background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/tcc-min.png');
 		background-position: top center;
 		background-size: cover;
 		background-attachment: fixed;
 	}
 
+	#iframe {
+		max-width: 94%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
 	// Shop
 	
 	#shop {
+		padding: 0 6rem;
 		a{
 			text-decoration: none;
 			figure {
@@ -167,7 +186,7 @@ body {
 				}
 				figcaption{
 					font-size: $textSm;
-					color: $fontColor;
+					color: $mainColor;
 					padding:0;
 					text-align: center;
 					margin-top: 1rem;
@@ -175,16 +194,17 @@ body {
 				}
 			}
 			p.price{
-				color: $fontColor;
+				color: $mainColor;
 				padding-bottom: 10px;
 				text-align: center;
+				font-weight: 700;
 				margin: 0;
 				transition: all ease-in-out .2s;
 			}
 			&:hover{
 				p, figcaption{
 					cursor: pointer;
-					color: $mainColor;
+					color: $fontColor;
 					font-weight: 900;
 				}
 			}
@@ -192,22 +212,13 @@ body {
 	}
 }
 
-//Contacto
-
-// #contacto {
-// 	margin-bottom: 5rem;
-// }
-
-// Especialidades
-
 #especialidades {
 	margin-top: 10rem;
-	.carousel {
-		margin-bottom: 5rem!important;
-		border: 1px solid red;
-	}
 }
 
+.carousel {
+	width: 90%;
+}
 // Covid 
 
 #covid {
@@ -224,20 +235,20 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	p {
-		color: $fontColor;
-	}
 
 	span {
 		text-transform: uppercase;
-		color: $mainColor;
+		font-size: $textLg;
+		color: $hightlightColor;
 	}
 
 	a {
 		text-decoration: none;
-		color: $mainColor;
+		color: $fontColor;
+		font-weight: 600;
 		&:hover {
 			text-decoration: underline;
+			color: $mainColor;
 		}
 	}
 }
@@ -254,9 +265,11 @@ body {
 			h2 {
 				font-size: $textXl;
 				text-align: center;
+				color: $fontColor;
 			}
 			p {
 				text-align: center;
+				font-weight: 700;
 			}
 		}
 	}
@@ -293,7 +306,7 @@ body {
 	
 		#covid, #sobre-mi {
 			img {
-				max-width: 80%;
+				width: 90%;
 			}
 		}
 	}
@@ -301,6 +314,11 @@ body {
 
 // Mobile
 @include mobileScreen {	
+
+	html,
+	body {
+		overflow-y: auto;
+	}
 
 	body {
 		.button {
@@ -350,7 +368,7 @@ body {
 			}
 
 			h5 {
-				font-size: $textSm;
+				font-size: 2rem;
 			}
 
 			h4 {
@@ -362,9 +380,11 @@ body {
 			article {
 				h2 {
 					font-size: $textLg;
+					font-weight: 700;
 				}
 				p {
 					font-size: $textSm;
+					font-weight: 700;
 				}
 			}
 		}
