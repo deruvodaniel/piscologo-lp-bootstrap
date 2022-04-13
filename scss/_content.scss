@@ -19,7 +19,7 @@ body {
 	overflow: auto;
 
 	section {
-		min-height: 90vh;
+		min-height: 80vh;
 		height: fit-content;
 		margin: 5rem 0;
 		padding:  2rem 5rem;
@@ -140,7 +140,7 @@ body {
 		flex-direction: column;
 		justify-content: space-around;
 		background-color: transparent;
-		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/hero-min.png);
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/hero-min.jpg);
 		// background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/tcc-min.png');
 		background-position: top center;
 		background-size: cover;
