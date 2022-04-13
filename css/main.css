@@ -4,7 +4,7 @@
   margin: 0; }
 
 .bg-darker {
-  background-color: #484d58; }
+  background-color: #333333; }
 
 .bg-dark-lite {
   background-color: #5e6178; }
@@ -15,30 +15,41 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: #242424;
+  background-image: url(/img/404-min.svg);
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
   font-size: 1.6rem;
   line-height: 2;
   overflow: auto; }
+  body section {
+    min-height: 90vh;
+    height: fit-content;
+    margin: 5rem 0;
+    padding: 2rem 5rem;
+    max-width: 90%;
+    border-radius: 10px;
+    transition: all ease-in .4s; }
   body main {
     margin-top: 7rem;
-    min-height: fit-content; }
+    min-height: fit-content;
+    transition: all ease-out .4s; }
   body img {
     max-width: 100%;
     display: block;
     margin: 0 auto; }
   body h1 {
-    font-size: 3.8rem;
-    margin: 0;
+    font-size: 5rem;
     text-align: center;
     text-transform: uppercase; }
   body h2 {
-    font-size: 3.4rem;
+    font-size: 5rem;
     color: #fff; }
   body h3 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #ffbf34;
     margin: 0; }
   body h4 {
@@ -56,19 +67,19 @@ body {
     font-size: 1.8rem;
     padding: 1rem 3rem;
     display: inline-block;
-    text-align: center; }
+    text-align: center;
+    transition: all ease-in-out .3s; }
     body .button:hover, body .btn-rounded:hover {
       cursor: pointer;
       color: #242424;
       background-color: #ffbf34;
-      border: 1px solid #ffbf34; }
+      border: 1px solid #ffbf34;
+      transform: scale(1.1); }
   body .btn-rounded {
     border-radius: 0.25rem; }
   body .navbar img {
     max-width: 60px; }
   body #hero {
-    background-image: url(/img/hero-min.jpg);
-    filter: grayscale(20%);
     height: 100vh;
     width: 100%;
     background-position: top center;
@@ -76,59 +87,74 @@ body {
     background-attachment: fixed;
     margin-top: 76px; }
     body #hero p {
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: 600;
       text-align: center;
       color: #fff; }
     body #hero h1 {
-      font-size: 5rem;
+      font-size: 8rem;
       font-weight: 600;
       text-align: center;
       color: #ffbf34;
       text-transform: uppercase; }
   body #tcc {
+    margin-top: 10rem;
+    padding: 4rem;
     display: flex;
+    width: 100vw;
     flex-direction: column;
     justify-content: space-around;
     background-color: transparent;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/tcc-min.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/hero-min.png);
     background-position: top center;
     background-size: cover;
-    background-attachment: fixed;
-    min-height: 450px; }
-  body #shop figure img {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    min-width: auto;
-    height: 220px;
-    border-radius: 5px; }
-    body #shop figure img:hover {
+    background-attachment: fixed; }
+  body #intereses {
+    min-height: 570px; }
+  body #shop a {
+    text-decoration: none; }
+    body #shop a figure img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      min-width: auto;
+      height: 220px;
+      border-radius: 5px;
+      transition: all ease-in-out .2s; }
+      body #shop a figure img:hover {
+        cursor: pointer;
+        transform: scale(1.1); }
+    body #shop a figure figcaption {
+      font-size: 1.3rem;
+      color: #fff;
+      padding: 0;
+      text-align: center;
+      margin-top: 1rem;
+      transition: all ease-in-out .2s; }
+    body #shop a p.price {
+      color: #fff;
+      padding-bottom: 10px;
+      text-align: center;
+      margin: 0;
+      transition: all ease-in-out .2s; }
+    body #shop a:hover p, body #shop a:hover figcaption {
       cursor: pointer;
-      transform: scale(1.1); }
-  body #shop figure figcaption {
-    font-size: 1.5rem;
-    color: #fff;
-    padding: 0;
-    text-align: center;
-    margin-top: 1rem; }
-    body #shop figure figcaption:hover {
-      cursor: pointer;
-      color: #ffbf34; }
-  body #shop p.price {
-    color: #fff;
-    padding-bottom: 10px;
-    text-align: center;
-    margin: 0; }
+      color: #ffbf34;
+      font-weight: 900; }
 
-#especialidades .carousel {
-  margin-bottom: 5rem !important;
-  border: 1px solid red; }
+#especialidades {
+  margin-top: 10rem; }
+  #especialidades .carousel {
+    margin-bottom: 5rem !important;
+    border: 1px solid red; }
 
 #covid {
+  margin-top: 10rem;
+  padding: 4rem;
   min-height: 100vh;
   height: 100%; }
 
 #sobre-mi {
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -143,42 +169,67 @@ body {
     #sobre-mi a:hover {
       text-decoration: underline; }
 
-@media screen and (max-width: 480px) {
+#error-page {
+  height: 100vh; }
+  #error-page .msg {
+    border-radius: 25px;
+    width: 50vw; }
+    #error-page .msg .text-wrapper h2 {
+      font-size: 5rem;
+      text-align: center; }
+    #error-page .msg .text-wrapper p {
+      text-align: center; }
+
+@media screen and (max-width: 768px) {
+  body #hero h1 {
+    font-size: 5rem; }
+  body #hero p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center; }
+  body #tcc h1 {
+    font-size: 3.5rem; }
+  body #tcc h5 {
+    font-size: 1.3rem; }
+  body #tcc h4 {
+    font-size: 2.5rem; }
+  body #covid img, body #sobre-mi img {
+    max-width: 80%; } }
+
+@media screen and (max-width: 576px) {
   body .button, body .btn-rounded {
     min-width: 100% !important;
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding: 5px 15px; }
-  body #hero {
-    background-position: bottom right;
-    background-size: cover;
-    height: 60vh; }
-    body #hero h1 {
-      font-size: 2.2rem; }
-    body #hero p {
-      font-size: 1.2rem;
-      font-weight: 600;
-      text-align: center; }
+  body #hero h1 {
+    font-size: 3.5rem; }
+  body #hero p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center; }
   body #especialidades h1, body #sobre-mi h1, body #covid h1 {
-    font-size: 3rem; }
+    font-size: 2.5rem; }
   body #especialidades h3, body #especialidades h4, body #sobre-mi h3, body #sobre-mi h4, body #covid h3, body #covid h4 {
-    font-size: 1.5rem; }
+    font-size: 2.5rem;
+    text-align: center; }
   body #especialidades p, body #especialidades span, body #sobre-mi p, body #sobre-mi span, body #covid p, body #covid span {
-    font-size: 1rem; }
+    font-size: 1.3rem;
+    text-align: center; }
   body .carousel {
     min-width: 100%;
     margin: 0 !important; }
+    body .carousel h2 {
+      font-size: 2.5rem; }
   body #tcc h1 {
-    font-size: 1.5rem; }
+    font-size: 2.5rem; }
   body #tcc h5 {
+    font-size: 1.3rem; }
+  body #tcc h4 {
     font-size: 1.5rem; }
-  body #contacto article h4 {
-    font-size: 2rem; }
+  body #contacto article h2 {
+    font-size: 3.5rem; }
   body #contacto article p {
-    font-size: 1rem; } }
-
-@media screen and (min-width: 768px) {
-  #covid img, #sobre-mi img {
-    max-width: 40%; } }
+    font-size: 1.3rem; } }
 
 footer {
   position: relative;
@@ -188,8 +239,9 @@ footer {
   padding: 2rem;
   z-index: 6; }
   footer h5 {
-    font-size: 1rem;
-    margin: 0; }
+    font-size: 1.3rem;
+    margin: 0;
+    text-align: center; }
   footer span {
     color: #ffbf34; }
   footer .redes {
@@ -200,19 +252,20 @@ footer {
     footer .redes img {
       margin-left: 15px;
       box-shadow: rgba(59, 59, 59, 0.35) 0px 5px 15px;
-      border-radius: 100%; }
+      border-radius: 100%;
+      transition: all ease-in-out .3s; }
       footer .redes img:hover {
-        opacity: 0.7;
-        transform: translateY(2px); }
+        transform: scale(1.1);
+        opacity: 0.8; }
     footer .redes .icon {
       max-width: 4rem; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   footer {
     flex-direction: column;
     align-items: flex-start; }
     footer h5 {
-      font-size: 1rem; }
+      font-size: 1.3rem; }
     footer nav {
       flex-direction: column; }
       footer nav .redes .icon {

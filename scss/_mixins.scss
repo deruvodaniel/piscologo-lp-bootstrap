@@ -1,4 +1,4 @@
-$mobile-width: 480px;
+$mobile-width: 576px;
 $medium-width: 768px;
 
 @mixin mobileScreen {
@@ -8,7 +8,7 @@ $medium-width: 768px;
 }
 
 @mixin mediumScreen {
-  @media screen and (min-width: $medium-width) {
+  @media screen and (max-width: $medium-width) {
     @content;
   }
 }
