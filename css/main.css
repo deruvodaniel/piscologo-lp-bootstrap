@@ -10,21 +10,18 @@
   background-color: #d5ecfc; }
 
 .bg-gradient-deep {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.425), rgba(252, 252, 252, 0)); }
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.658), rgba(252, 252, 252, 0.03)); }
 
-/* Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px; }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: white; }
   ::-webkit-scrollbar-track:hover {
     border: 1px solid #b8b8b8;
     border-radius: 10px; }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgba(51, 51, 51, 0.2);
   border-radius: 10px; }
@@ -32,7 +29,6 @@
 ::-webkit-scrollbar-thumb:vertical {
   background-color: #254E70; }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #c75a6e; }
 
@@ -67,7 +63,8 @@ body {
   body img {
     max-width: 100%;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    border-radius: 10px; }
   body h1 {
     font-size: 5rem;
     text-align: center;
@@ -112,7 +109,7 @@ body {
       border-color: #c75a6e;
       transform: scale(1.1); }
   body .btn-rounded {
-    border-radius: 0.25rem; }
+    border-radius: 5px; }
   body .navbar img {
     max-width: 60px; }
   body #hero {
@@ -201,11 +198,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  #sobre-mi span {
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    color: #41a2c2;
-    text-align: center; }
   #sobre-mi a {
     text-decoration: none;
     color: #c75a6e;
@@ -214,10 +206,13 @@ body {
       text-decoration: underline;
       color: #fff; }
 
+#contacto h2 {
+  color: #41a2c2; }
+
 #error-page {
   height: 100vh; }
   #error-page .msg {
-    border-radius: 25px;
+    border-radius: 10px;
     padding: 15rem;
     width: 70%; }
     #error-page .msg .text-wrapper h2 {
@@ -291,7 +286,8 @@ footer {
   footer h5 {
     font-size: 1.5rem;
     margin: 0;
-    text-align: center; }
+    text-align: center;
+    color: #022F40; }
   footer span {
     color: #41a2c2; }
   footer .redes {
@@ -302,8 +298,8 @@ footer {
     footer .redes img {
       margin-left: 15px;
       box-shadow: rgba(59, 59, 59, 0.35) 0px 5px 15px;
-      border-radius: 100%;
-      transition: all ease-in-out .3s; }
+      transition: all ease-in-out .3s;
+      border-radius: 100%; }
       footer .redes img:hover {
         transform: scale(1.1);
         opacity: 0.8; }
