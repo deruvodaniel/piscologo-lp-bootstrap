@@ -188,6 +188,8 @@ body {
 
 .carousel {
   width: 90%; }
+  .carousel img {
+    width: 100%; }
 
 #covid {
   margin-top: 10rem;
