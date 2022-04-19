@@ -178,8 +178,9 @@ body {
 				img{
 					border-top-left-radius: 5px;
 					border-top-right-radius: 5px;
-					min-width: auto;
-					height: 220px;
+					width: 100%;
+					width: auto;
+					max-height: 220px;
 					border-radius: $secBorderRadius;
 					transition: all ease-in-out .2s;
 					&:hover{
