@@ -34,7 +34,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #C33C54; }
+  background: #c75a6e; }
 
 html {
   font-size: 62.5%;
@@ -72,7 +72,7 @@ body {
     font-size: 5rem;
     text-align: center;
     text-transform: uppercase;
-    color: #0090C1;
+    color: #41a2c2;
     font-weight: 600; }
   body h2 {
     font-size: 5rem;
@@ -80,23 +80,23 @@ body {
     font-weight: 600; }
   body h3 {
     font-size: 3.5rem;
-    color: #C33C54;
+    color: #c75a6e;
     margin: 0;
     font-weight: 600; }
   body h4 {
     font-size: 2.6rem;
-    color: #C33C54;
+    color: #c75a6e;
     font-weight: 600; }
   body h5 {
     font-size: 2rem;
-    color: #022F40;
+    color: #fff;
     font-weight: 600; }
   body p {
     font-size: 2rem;
     font-weight: 500; }
   body .button, body .btn-rounded {
     background-color: #022F40;
-    border: 2px solid #0090C1;
+    border: 2px solid #41a2c2;
     color: #fff;
     font-weight: 700;
     text-decoration: none;
@@ -108,8 +108,8 @@ body {
     body .button:hover, body .btn-rounded:hover {
       cursor: pointer;
       color: #fff;
-      background-color: #C33C54;
-      border: 2px solid #C33C54;
+      background-color: #c75a6e;
+      border-color: #c75a6e;
       transform: scale(1.1); }
   body .btn-rounded {
     border-radius: 0.25rem; }
@@ -139,7 +139,8 @@ body {
     display: flex;
     width: 100vw;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-around; }
+  body .parallax {
     background-color: transparent;
     background-image: linear-gradient(rgba(172, 172, 172, 0.5), rgba(141, 141, 141, 0.5)), url(../img/hero-min.jpg);
     background-position: top center;
@@ -180,7 +181,7 @@ body {
         transition: all ease-in-out .2s; }
       body #shop a:hover p, body #shop a:hover figcaption {
         cursor: pointer;
-        color: #C33C54;
+        color: #c75a6e;
         font-weight: 900; }
 
 #especialidades {
@@ -202,11 +203,12 @@ body {
   justify-content: center; }
   #sobre-mi span {
     text-transform: uppercase;
-    font-size: 3.5rem;
-    color: #0090C1; }
+    font-size: 2.5rem;
+    color: #41a2c2;
+    text-align: center; }
   #sobre-mi a {
     text-decoration: none;
-    color: #C33C54;
+    color: #c75a6e;
     font-weight: 600; }
     #sobre-mi a:hover {
       text-decoration: underline;
@@ -221,7 +223,7 @@ body {
     #error-page .msg .text-wrapper h2 {
       font-size: 5rem;
       text-align: center;
-      color: #C33C54; }
+      color: #c75a6e; }
     #error-page .msg .text-wrapper p {
       text-align: center;
       font-weight: 700; }
@@ -271,8 +273,6 @@ body {
       font-size: 2.5rem; }
   body #tcc h1 {
     font-size: 2.5rem; }
-  body #tcc h5 {
-    font-size: 2rem; }
   body #tcc h4 {
     font-size: 1.5rem; }
   body #contacto article h2 {
@@ -293,7 +293,7 @@ footer {
     margin: 0;
     text-align: center; }
   footer span {
-    color: #0090C1; }
+    color: #41a2c2; }
   footer .redes {
     height: fit-content;
     display: flex;
