@@ -25,13 +25,13 @@ body {
 		padding:  2rem 5rem;
 		max-width: 90%;
 		border-radius: $mainBorderRadius;
-		transition: all ease-in .4s;
+		transition: all ease-in .6s;
 	}
 
 	main {
 		margin-top: 7rem;
 		min-height: fit-content;
-		transition: all ease-out .4s;
+		transition: all ease-in .6s;
 	}
 	
 	img {
@@ -39,6 +39,7 @@ body {
 		display: block;
 		margin: 0 auto;
 		border-radius: $mainBorderRadius;
+		transition: all ease-in .4s;
 	}
 	
 	h1 {
